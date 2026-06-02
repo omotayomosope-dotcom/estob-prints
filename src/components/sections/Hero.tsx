@@ -35,7 +35,7 @@ export default function Hero() {
       backgroundRepeat: "no-repeat",
     }}>
 
-      {/* Dark overlay - lightened to show printing machine */}
+      {/* Dark overlay */}
       <div style={{
         position: "absolute", inset: 0, zIndex: 1,
         background: "linear-gradient(to bottom, rgba(12,8,8,0.55) 0%, rgba(10,6,6,0.65) 50%, rgba(8,4,4,0.85) 100%)",
@@ -73,8 +73,7 @@ export default function Hero() {
           <span style={{ display: "block", color: "#C41A1A" }}>We Deliver.</span>
           <span style={{
             display: "block",
-            color: "transparent",
-            WebkitTextStroke: "1px rgba(255,255,255,0.25)",
+            color: "rgba(255,255,255,0.2)",
           }}>
             Every Time.
           </span>
