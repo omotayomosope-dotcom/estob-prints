@@ -123,12 +123,12 @@ export default function Navbar() {
               Get a Quote
             </Link>
 
-            {/* Hamburger */}
+            {/* Hamburger - bigger for mobile */}
             <button onClick={() => setOpen(!open)} className="lg:hidden"
-              style={{ background: "none", border: "none", cursor: "pointer", padding: "4px", display: "flex", flexDirection: "column", gap: "5px" }}>
-              <span style={{ display: "block", width: "22px", height: "1px", background: "#111", transition: "all 0.3s", transform: open ? "rotate(45deg) translate(4px,4px)" : "none" }} />
-              <span style={{ display: "block", width: "22px", height: "1px", background: "#111", transition: "all 0.3s", opacity: open ? 0 : 1 }} />
-              <span style={{ display: "block", width: "22px", height: "1px", background: "#111", transition: "all 0.3s", transform: open ? "rotate(-45deg) translate(4px,-4px)" : "none" }} />
+              style={{ background: "none", border: "none", cursor: "pointer", padding: "8px", display: "flex", flexDirection: "column", gap: "7px" }}>
+              <span style={{ display: "block", width: "30px", height: "2px", background: "#111", transition: "all 0.3s", transform: open ? "rotate(45deg) translate(5px,5px)" : "none" }} />
+              <span style={{ display: "block", width: "30px", height: "2px", background: "#111", transition: "all 0.3s", opacity: open ? 0 : 1 }} />
+              <span style={{ display: "block", width: "30px", height: "2px", background: "#111", transition: "all 0.3s", transform: open ? "rotate(-45deg) translate(5px,-5px)" : "none" }} />
             </button>
           </div>
         </div>
