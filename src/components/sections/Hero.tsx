@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
-import { CONTACT_INFO } from "@/lib/constants";
 
 export default function Hero() {
   useEffect(() => {
@@ -68,22 +67,28 @@ export default function Hero() {
           <span style={{ display: "block", width: "6px", height: "6px", borderRadius: "50%", background: "#C41A1A", opacity: 0.5 }} />
         </div>
 
-        <p style={{ fontFamily: "'Inter',sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem,1.3vw,1.05rem)", lineHeight: 1.9, color: "rgba(255,255,255,0.85)", maxWidth: "360px", marginBottom: "2rem", background: "rgba(0,0,0,0.25)", padding: "1rem 1.2rem", backdropFilter: "blur(4px)" }}>
-          25 years of premium printing from Ogba, Ikeja. Serving governments, corporations and organizations across Nigeria.
+        {/* Stronger description */}
+        <p style={{ fontFamily: "'Inter',sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem,1.3vw,1.05rem)", lineHeight: 1.9, color: "rgba(255,255,255,0.85)", maxWidth: "420px", marginBottom: "2rem", background: "rgba(0,0,0,0.25)", padding: "1rem 1.2rem", backdropFilter: "blur(4px)" }}>
+          For over 25 years, businesses across Lagos and Nigeria have trusted ESTOB Prints for premium printing, branding, and nationwide delivery.
         </p>
 
+        {/* Cleaner trust indicators */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: "1.5rem", marginBottom: "1.2rem" }}>
-          {[
-            { icon: "⭐", label: "Trusted by 500+ Businesses" },
-            { icon: "✓", label: "25 Years Experience" },
-          ].map((item, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-              <span style={{ fontSize: "11px", color: "#C41A1A" }}>{item.icon}</span>
-              <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 400, fontSize: "11px", color: "rgba(255,255,255,0.55)" }}>
-                {item.label}
-              </span>
-            </div>
-          ))}
+          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+            <span style={{ fontSize: "11px", color: "#C41A1A" }}>⭐</span>
+            <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 400, fontSize: "11px", color: "rgba(255,255,255,0.55)" }}>
+              Trusted by 500+ Businesses
+            </span>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+            <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 400, fontSize: "11px", color: "rgba(255,255,255,0.3)" }}>|</span>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+            <span style={{ fontSize: "11px", color: "#C41A1A" }}>✓</span>
+            <span style={{ fontFamily: "'Inter',sans-serif", fontWeight: 400, fontSize: "11px", color: "rgba(255,255,255,0.55)" }}>
+              25+ Years of Experience
+            </span>
+          </div>
         </div>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2rem", alignItems: "center" }}>
