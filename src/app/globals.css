@@ -282,3 +282,9 @@ body {
     grid-template-columns: 1fr !important;
   }
 }
+/* Fix fade-up always visible */
+.fade-up {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
