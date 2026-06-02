@@ -80,6 +80,33 @@ export default function Hero() {
           </span>
         </h1>
 
+        {/* Unique Value Proposition */}
+        <div className="fade-up" style={{
+          animationDelay: "0.35s",
+          marginTop: "2rem",
+          display: "flex", flexWrap: "wrap", gap: "1.5rem",
+        }}>
+          {[
+            "25 Years of Excellence",
+            "Nationwide Delivery",
+            "Fast Turnaround",
+            "Premium Quality",
+          ].map((item, i) => (
+            <div key={i} style={{
+              display: "flex", alignItems: "center", gap: "8px",
+            }}>
+              <span style={{ display: "block", width: "6px", height: "6px", borderRadius: "50%", background: "#C41A1A", flexShrink: 0 }} />
+              <span style={{
+                fontFamily: "'Poppins',sans-serif", fontWeight: 500, fontSize: "11px",
+                letterSpacing: "0.1em", textTransform: "uppercase",
+                color: "rgba(255,255,255,0.65)",
+              }}>
+                {item}
+              </span>
+            </div>
+          ))}
+        </div>
+
         {/* Divider */}
         <div className="fade-up" style={{ animationDelay: "0.4s", margin: "3rem 0", display: "flex", alignItems: "center", gap: "1rem" }}>
           <span style={{ display: "block", width: "40px", height: "1px", background: "#C41A1A" }} />
