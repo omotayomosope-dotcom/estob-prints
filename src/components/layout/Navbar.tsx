@@ -109,8 +109,10 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Right side — CTA + Hamburger */}
+          {/* Right side — CTA + Mobile WhatsApp + Hamburger */}
           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+
+            {/* Desktop Get a Quote */}
             <Link href="/contact" className="hidden lg:block" style={{
               fontFamily: "'Poppins',sans-serif", fontWeight: 700, fontSize: "10px",
               letterSpacing: "0.18em", textTransform: "uppercase",
@@ -123,7 +125,22 @@ export default function Navbar() {
               Get a Quote
             </Link>
 
-            {/* Hamburger - bigger for mobile */}
+            {/* Mobile WhatsApp button — visible on mobile only */}
+            <a href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\D/g,"")}`}
+              target="_blank" rel="noopener noreferrer"
+              className="lg:hidden"
+              style={{
+                fontFamily: "'Poppins',sans-serif", fontWeight: 700, fontSize: "10px",
+                letterSpacing: "0.12em", textTransform: "uppercase",
+                color: "white", textDecoration: "none",
+                background: "#25D366", padding: "9px 16px",
+                display: "flex", alignItems: "center", gap: "6px",
+              }}>
+              <WhatsAppIcon />
+              Chat
+            </a>
+
+            {/* Hamburger */}
             <button onClick={() => setOpen(!open)} className="lg:hidden"
               style={{ background: "none", border: "none", cursor: "pointer", padding: "8px", display: "flex", flexDirection: "column", gap: "7px" }}>
               <span style={{ display: "block", width: "30px", height: "2px", background: "#111", transition: "all 0.3s", transform: open ? "rotate(45deg) translate(5px,5px)" : "none" }} />
