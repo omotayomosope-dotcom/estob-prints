@@ -28,7 +28,7 @@ export default function Hero() {
       display: "flex",
       flexDirection: "column",
       justifyContent: "flex-end",
-      paddingTop: "140px",
+      paddingTop: "100px",
       backgroundImage: "url('/printing-machine.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
@@ -48,10 +48,10 @@ export default function Hero() {
       }} />
 
       {/* Main Content */}
-      <div className="container-estob" style={{ paddingBottom: "6rem", position: "relative", zIndex: 2 }}>
+      <div className="container-estob" style={{ paddingBottom: "4rem", position: "relative", zIndex: 2 }}>
 
         {/* Eyebrow */}
-        <div className="fade-up" style={{ animationDelay: "0.1s", display: "flex", alignItems: "center", gap: "14px", marginBottom: "3rem" }}>
+        <div className="fade-up" style={{ animationDelay: "0.1s", display: "flex", alignItems: "center", gap: "14px", marginBottom: "1.5rem" }}>
           <span style={{ display: "block", width: "28px", height: "1px", background: "#C41A1A" }} />
           <span style={{
             fontFamily: "'Poppins',sans-serif", fontWeight: 500, fontSize: "10px",
@@ -71,10 +71,7 @@ export default function Hero() {
           <span style={{ display: "block" }}>We Print.</span>
           <span style={{ display: "block" }}>We Brand.</span>
           <span style={{ display: "block", color: "#C41A1A" }}>We Deliver.</span>
-          <span style={{
-            display: "block",
-            color: "rgba(255,255,255,0.2)",
-          }}>
+          <span style={{ display: "block", color: "rgba(255,255,255,0.2)" }}>
             Every Time.
           </span>
         </h1>
@@ -82,8 +79,8 @@ export default function Hero() {
         {/* Unique Value Proposition */}
         <div className="fade-up" style={{
           animationDelay: "0.35s",
-          marginTop: "2rem",
-          display: "flex", flexWrap: "wrap", gap: "1.5rem",
+          marginTop: "1.5rem",
+          display: "flex", flexWrap: "wrap", gap: "1rem",
         }}>
           {[
             "25 Years of Excellence",
@@ -91,9 +88,7 @@ export default function Hero() {
             "Fast Turnaround",
             "Premium Quality",
           ].map((item, i) => (
-            <div key={i} style={{
-              display: "flex", alignItems: "center", gap: "8px",
-            }}>
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span style={{ display: "block", width: "6px", height: "6px", borderRadius: "50%", background: "#C41A1A", flexShrink: 0 }} />
               <span style={{
                 fontFamily: "'Poppins',sans-serif", fontWeight: 500, fontSize: "11px",
@@ -107,7 +102,7 @@ export default function Hero() {
         </div>
 
         {/* Divider */}
-        <div className="fade-up" style={{ animationDelay: "0.4s", margin: "3rem 0", display: "flex", alignItems: "center", gap: "1rem" }}>
+        <div className="fade-up" style={{ animationDelay: "0.4s", margin: "2rem 0", display: "flex", alignItems: "center", gap: "1rem" }}>
           <span style={{ display: "block", width: "40px", height: "1px", background: "#C41A1A" }} />
           <span style={{ display: "block", width: "6px", height: "6px", borderRadius: "50%", background: "#C41A1A", opacity: 0.5 }} />
         </div>
@@ -118,7 +113,7 @@ export default function Hero() {
           fontFamily: "'Inter',sans-serif", fontWeight: 300,
           fontSize: "clamp(0.9rem,1.3vw,1.05rem)",
           lineHeight: 1.9, color: "rgba(255,255,255,0.85)",
-          maxWidth: "420px", marginBottom: "2.5rem",
+          maxWidth: "420px", marginBottom: "2rem",
           background: "rgba(0,0,0,0.25)",
           padding: "1rem 1.2rem",
           backdropFilter: "blur(4px)",
@@ -127,9 +122,7 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="fade-up" style={{ animationDelay: "0.55s", display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "5rem", alignItems: "center" }}>
-          
-          {/* Primary CTA - bigger and more prominent */}
+        <div className="fade-up" style={{ animationDelay: "0.55s", display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "3rem", alignItems: "center" }}>
           <Link href="/contact" style={{
             fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "12px",
             letterSpacing: "0.25em", textTransform: "uppercase",
@@ -182,8 +175,8 @@ export default function Hero() {
         {/* Stats */}
         <div className="fade-up" style={{
           animationDelay: "0.7s",
-          display: "flex", flexWrap: "wrap", gap: "4rem",
-          paddingTop: "3rem",
+          display: "flex", flexWrap: "wrap", gap: "3rem",
+          paddingTop: "2rem",
           borderTop: "1px solid rgba(255,255,255,0.08)",
         }}>
           {[
