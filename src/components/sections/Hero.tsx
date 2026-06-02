@@ -35,10 +35,10 @@ export default function Hero() {
       backgroundRepeat: "no-repeat",
     }}>
 
-      {/* Dark overlay */}
+      {/* Dark overlay - lightened to show printing machine */}
       <div style={{
         position: "absolute", inset: 0, zIndex: 1,
-        background: "linear-gradient(to bottom, rgba(12,8,8,0.82) 0%, rgba(10,6,6,0.88) 50%, rgba(8,4,4,0.97) 100%)",
+        background: "linear-gradient(to bottom, rgba(12,8,8,0.55) 0%, rgba(10,6,6,0.65) 50%, rgba(8,4,4,0.85) 100%)",
       }} />
 
       {/* Red bottom accent */}
