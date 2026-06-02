@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 const TESTIMONIALS = [
   {
     quote: "ESTOB Prints delivered our corporate branded bags on time and the quality was outstanding. Every detail was perfect. We will definitely be coming back.",
-    name: "Temple Group Ltd.",
+    name: "Babatunde M.",
     title: "Business Owner, Lagos",
     category: "Corporate",
     initial: "A",
@@ -25,8 +25,8 @@ const TESTIMONIALS = [
   },
   {
     quote: "I have been using ESTOB for all my business printing needs for over 5 years. Consistent quality, honest pricing and they always meet deadlines.",
-    name: "Babatunde M.",
-    title: "Managing Director, Lagos",
+    name: "Temple Group Ltd.",
+    title: "Managing Director, Lagos"
     category: "Corporate",
     initial: "B",
   },
