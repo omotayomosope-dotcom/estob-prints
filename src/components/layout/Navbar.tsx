@@ -36,8 +36,8 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top bar */}
-      <div style={{ background: "#C41A1A", padding: "10px 0", position: "relative", zIndex: 100 }}>
+      {/* Top bar - hidden on mobile */}
+      <div className="hidden lg:block" style={{ background: "#C41A1A", padding: "10px 0", position: "relative", zIndex: 100 }}>
         <div className="container-estob" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             <a href={`tel:${CONTACT_INFO.phone}`} style={{ fontFamily: "'Inter',sans-serif", fontSize: "11px", letterSpacing: "0.08em", color: "rgba(255,255,255,0.9)", textDecoration: "none", display: "flex", alignItems: "center", gap: "6px" }}>
