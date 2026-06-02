@@ -20,7 +20,7 @@ export default function WhatsAppFloat() {
         textDecoration: "none",
         fontSize: "24px",
       }}
-    >
+    <a
       ??
     </a>
   );
