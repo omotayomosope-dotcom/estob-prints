@@ -44,7 +44,7 @@ export default function Hero() {
       <div className="container-estob" style={{ paddingBottom: "4rem", position: "relative", zIndex: 2 }}>
 
         {/* Eyebrow */}
-        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "1.5rem", opacity: 1 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "1.5rem" }}>
           <span style={{ display: "block", width: "20px", height: "1px", background: "#C41A1A", flexShrink: 0 }} />
           <span style={{
             fontFamily: "'Poppins',sans-serif", fontWeight: 500,
@@ -64,7 +64,7 @@ export default function Hero() {
           <span style={{ display: "block" }}>We Print.</span>
           <span style={{ display: "block" }}>We Brand.</span>
           <span style={{ display: "block", color: "#C41A1A" }}>We Deliver.</span>
-          <span style={{ display: "block", color: "rgba(255,255,255,0.45)", fontSize: "clamp(2rem, 5vw, 5rem)" }}>
+          <span style={{ display: "block", color: "rgba(255,255,255,0.55)", fontSize: "clamp(2rem, 5vw, 5rem)" }}>
             Every Time.
           </span>
         </h1>
@@ -99,23 +99,43 @@ export default function Hero() {
           <span style={{ display: "block", width: "6px", height: "6px", borderRadius: "50%", background: "#C41A1A", opacity: 0.5 }} />
         </div>
 
-        {/* Subtext */}
+        {/* Subtext — shorter on mobile */}
         <p style={{
           fontFamily: "'Inter',sans-serif", fontWeight: 300,
           fontSize: "clamp(0.9rem,1.3vw,1.05rem)",
           lineHeight: 1.9, color: "rgba(255,255,255,0.85)",
-          maxWidth: "420px", marginBottom: "2rem",
+          maxWidth: "360px", marginBottom: "2rem",
           background: "rgba(0,0,0,0.25)",
           padding: "1rem 1.2rem",
           backdropFilter: "blur(4px)",
         }}>
-          25 years of premium printing from the heart of Ogba, Ikeja. Serving governments, corporations, churches and organizations across Nigeria and beyond.
+          25 years of premium printing from Ogba, Ikeja. Serving governments, corporations and organizations across Nigeria.
         </p>
 
-        {/* CTAs — removed bottom WhatsApp button */}
+        {/* Trust indicator above CTA */}
+        <div style={{
+          display: "flex", flexWrap: "wrap", gap: "1.5rem",
+          marginBottom: "1.2rem",
+        }}>
+          {[
+            { icon: "⭐", label: "Trusted by 500+ Businesses" },
+            { icon: "✓", label: "25 Years Experience" },
+          ].map((item, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              <span style={{ fontSize: "11px", color: "#C41A1A" }}>{item.icon}</span>
+              <span style={{
+                fontFamily: "'Inter',sans-serif", fontWeight: 400, fontSize: "11px",
+                color: "rgba(255,255,255,0.55)",
+              }}>
+                {item.label}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* CTAs */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "3rem", alignItems: "center" }}>
 
-          {/* Primary CTA — larger on mobile */}
           <Link href="/contact" style={{
             fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "13px",
             letterSpacing: "0.25em", textTransform: "uppercase",
