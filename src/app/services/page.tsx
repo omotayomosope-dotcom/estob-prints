@@ -141,7 +141,7 @@ export default function ServicesPage() {
                     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "#C41A1A", zIndex: 2 }} />
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }} className="grid-cols-1 lg:grid-cols-2">
                       <div style={{ position: "relative", overflow: "hidden" }}>
-                        <Image src="/offset-paper.jpg" alt="Offset Paper Stock — ESTOB Prints" width={700} height={500}
+                        <Image src="/offset-paper.jpeg" alt="Offset Paper Stock — ESTOB Prints" width={700} height={500}
                           style={{ width: "100%", height: "500px", objectFit: "cover", display: "block" }} />
                       </div>
                       <div style={{ position: "relative", overflow: "hidden" }}>
