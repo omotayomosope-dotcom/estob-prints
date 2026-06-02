@@ -42,7 +42,7 @@ const SERVICES = [
     items: ["Custom Packaging", "Specialty Finishes", "Embossing & Foiling", "Die-Cut Shapes", "Lamination", "Bespoke Projects"],
   },
   {
-    n: "07", title: "Offset Paper Supplies",
+    n: "07", title: "Offset Paper Importation and Wholesaler",
     desc: "We supply premium quality offset paper and print materials sourced directly from trusted international manufacturers. Reliable stock. Competitive pricing. Fast delivery across Lagos.",
     items: ["Offset Paper Rolls", "24/36 Paper Sizes", "Art Paper", "Matt Paper", "Cream Bond", "Bulk Supply Orders"],
   },
@@ -134,35 +134,29 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              {/* Video — shows after Offset Paper Supplies (service 07) */}
+              {/* Photo + Video — shows after Offset Paper Importation and Wholesaler (service 07) */}
               {s.n === "07" && (
-                <div style={{ position: "relative", overflow: "hidden", borderTop: "1px solid #e8e8e8" }}>
-                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "#C41A1A", zIndex: 2 }} />
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    style={{
-                      width: "100%",
-                      height: "500px",
-                      objectFit: "cover",
-                      display: "block",
-                      filter: "contrast(1.05)",
-                    }}
-                  >
-                    <source src="/container.mp4" type="video/mp4" />
-                  </video>
-                  <div style={{
-                    position: "absolute", bottom: 0, left: 0, right: 0,
-                    background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)",
-                    padding: "3rem 2rem 2rem",
-                  }}>
-                    <div style={{ ...S, fontWeight: 600, fontSize: "9px", letterSpacing: "0.25em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: "8px" }}>
-                      Premium Offset Paper Supplies
+                <div style={{ borderTop: "1px solid #e8e8e8" }}>
+                  <div style={{ position: "relative", overflow: "hidden" }}>
+                    <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "#C41A1A", zIndex: 2 }} />
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }} className="grid-cols-1 lg:grid-cols-2">
+                      <div style={{ position: "relative", overflow: "hidden" }}>
+                        <Image src="/offset-paper.jpg" alt="Offset Paper Stock — ESTOB Prints" width={700} height={500}
+                          style={{ width: "100%", height: "500px", objectFit: "cover", display: "block" }} />
+                      </div>
+                      <div style={{ position: "relative", overflow: "hidden" }}>
+                        <video autoPlay muted loop playsInline style={{ width: "100%", height: "500px", objectFit: "cover", display: "block", filter: "contrast(1.05)" }}>
+                          <source src="/container.mp4" type="video/mp4" />
+                        </video>
+                      </div>
                     </div>
-                    <div style={{ ...S, fontWeight: 900, fontSize: "clamp(1.5rem,3vw,2.5rem)", color: "white", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
-                      Sourced from Trusted<br /><span style={{ color: "#C41A1A" }}>International Manufacturers.</span>
+                    <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)", padding: "3rem 2rem 2rem" }}>
+                      <div style={{ ...S, fontWeight: 600, fontSize: "9px", letterSpacing: "0.25em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: "8px" }}>
+                        Premium Offset Paper Supplies
+                      </div>
+                      <div style={{ ...S, fontWeight: 900, fontSize: "clamp(1.5rem,3vw,2.5rem)", color: "white", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+                        Sourced from Trusted<br /><span style={{ color: "#C41A1A" }}>International Manufacturers.</span>
+                      </div>
                     </div>
                   </div>
                 </div>
