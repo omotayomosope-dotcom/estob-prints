@@ -50,8 +50,8 @@ export default function Hero() {
       {/* Main Content */}
       <div className="container-estob" style={{ paddingBottom: "4rem", position: "relative", zIndex: 2 }}>
 
-        {/* Eyebrow */}
-        <div className="fade-up" style={{ animationDelay: "0.1s", display: "flex", alignItems: "center", gap: "10px", marginBottom: "1.5rem" }}>
+        {/* Eyebrow — no animation so it always shows */}
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "1.5rem" }}>
           <span style={{ display: "block", width: "20px", height: "1px", background: "#C41A1A", flexShrink: 0 }} />
           <span style={{
             fontFamily: "'Poppins',sans-serif", fontWeight: 500,
