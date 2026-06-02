@@ -1,13 +1,13 @@
 "use client";
 export default function WhatsAppFloat() {
   return (
-    <a
+    
       href="https://wa.me/2349074130380"
       target="_blank"
       rel="noopener noreferrer"
       style={{
         position: "fixed",
-        bottom: "2rem",
+        bottom: "4rem",
         right: "2rem",
         zIndex: 999,
         width: "56px",
