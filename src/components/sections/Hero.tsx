@@ -51,11 +51,13 @@ export default function Hero() {
       <div className="container-estob" style={{ paddingBottom: "4rem", position: "relative", zIndex: 2 }}>
 
         {/* Eyebrow */}
-        <div className="fade-up" style={{ animationDelay: "0.1s", display: "flex", alignItems: "center", gap: "14px", marginBottom: "1.5rem" }}>
-          <span style={{ display: "block", width: "28px", height: "1px", background: "#C41A1A" }} />
+        <div className="fade-up" style={{ animationDelay: "0.1s", display: "flex", alignItems: "center", gap: "10px", marginBottom: "1.5rem" }}>
+          <span style={{ display: "block", width: "20px", height: "1px", background: "#C41A1A", flexShrink: 0 }} />
           <span style={{
-            fontFamily: "'Poppins',sans-serif", fontWeight: 500, fontSize: "10px",
-            letterSpacing: "0.3em", textTransform: "uppercase", color: "rgba(255,255,255,0.7)",
+            fontFamily: "'Poppins',sans-serif", fontWeight: 500,
+            fontSize: "9px",
+            letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(255,255,255,0.7)",
+            whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
           }}>
             Ogba, Ikeja Lagos — Premium Print House
           </span>
@@ -71,7 +73,7 @@ export default function Hero() {
           <span style={{ display: "block" }}>We Print.</span>
           <span style={{ display: "block" }}>We Brand.</span>
           <span style={{ display: "block", color: "#C41A1A" }}>We Deliver.</span>
-          <span style={{ display: "block", color: "rgba(255,255,255,0.2)" }}>
+          <span style={{ display: "block", color: "rgba(255,255,255,0.15)" }}>
             Every Time.
           </span>
         </h1>
@@ -123,6 +125,8 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="fade-up" style={{ animationDelay: "0.55s", display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "3rem", alignItems: "center" }}>
+
+          {/* Primary CTA */}
           <Link href="/contact" style={{
             fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "12px",
             letterSpacing: "0.25em", textTransform: "uppercase",
