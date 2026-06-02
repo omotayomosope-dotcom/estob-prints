@@ -9,6 +9,7 @@ const SERVICES = [
   { n: "04", title: "Large Format Printing", desc: "Bold visual solutions built for attention and impact at scale." },
   { n: "05", title: "Promotional Materials", desc: "Creative print products designed to support campaigns and events." },
   { n: "06", title: "Custom Print Solutions", desc: "Tailored production solutions based on your unique business needs." },
+  { n: "07", title: "Offset Paper Importation and Wholesaler", desc: "Premium quality offset paper and print materials sourced directly from trusted international manufacturers. Reliable stock, competitive pricing." },
 ];
 
 export default function Services() {
@@ -70,4 +71,3 @@ export default function Services() {
     </section>
   );
 }
-
