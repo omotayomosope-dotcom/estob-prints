@@ -26,7 +26,7 @@ const TESTIMONIALS = [
   {
     quote: "I have been using ESTOB for all my business printing needs for over 10 years. Consistent quality, honest pricing and they always meet deadlines.",
     name: "Temple Group Ltd.",
-    title: "Managing Director, Lagos",
+    title: "Managing Director, Abuja",
     category: "Corporate",
     initial: "B",
   },
@@ -116,3 +116,4 @@ export default function Testimonials() {
     </section>
   );
 }
+
