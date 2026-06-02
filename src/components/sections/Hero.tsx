@@ -57,9 +57,8 @@ export default function Hero() {
             fontFamily: "'Poppins',sans-serif", fontWeight: 500,
             fontSize: "9px",
             letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(255,255,255,0.7)",
-            whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
           }}>
-            Ogba, Ikeja Lagos — Premium Print House
+            Ogba, Ikeja Lagos — Premium Prints
           </span>
         </div>
 
@@ -126,7 +125,6 @@ export default function Hero() {
         {/* CTAs */}
         <div className="fade-up" style={{ animationDelay: "0.55s", display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "3rem", alignItems: "center" }}>
 
-          {/* Primary CTA */}
           <Link href="/contact" style={{
             fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "12px",
             letterSpacing: "0.25em", textTransform: "uppercase",
