@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const SERVICES = [
   { n: "01", title: "Premium Printing", desc: "High-quality print solutions for businesses, brands, events, and organizations." },
@@ -66,7 +67,33 @@ export default function Services() {
             <span style={{ color: "#cccccc", fontSize: "14px" }}>→</span>
           </div>
         ))}
+
         <div style={{ borderTop: "1px solid #eeeeee" }} />
+
+        {/* Offset Paper Image */}
+        <div className="reveal" style={{ marginTop: "4rem", position: "relative", overflow: "hidden" }}>
+          <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "#C41A1A", zIndex: 2 }} />
+          <Image
+            src="/offset-paper.jpeg"
+            alt="Offset Paper Stock — ESTOB Prints"
+            width={1400}
+            height={500}
+            style={{ width: "100%", height: "400px", objectFit: "cover", objectPosition: "center top", display: "block" }}
+          />
+          <div style={{
+            position: "absolute", bottom: 0, left: 0, right: 0,
+            background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)",
+            padding: "3rem 2rem 2rem",
+          }}>
+            <div style={{ fontFamily: "'Poppins',sans-serif", fontWeight: 600, fontSize: "9px", letterSpacing: "0.25em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: "8px" }}>
+              Offset Paper Importation & Wholesale
+            </div>
+            <div style={{ fontFamily: "'Poppins',sans-serif", fontWeight: 900, fontSize: "clamp(1.5rem,3vw,2.5rem)", color: "white", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+              Premium Stock. Sourced from<br /><span style={{ color: "#C41A1A" }}>Trusted International Manufacturers.</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
