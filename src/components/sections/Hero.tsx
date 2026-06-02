@@ -112,13 +112,16 @@ export default function Hero() {
           <span style={{ display: "block", width: "6px", height: "6px", borderRadius: "50%", background: "#C41A1A", opacity: 0.5 }} />
         </div>
 
-        {/* Subtext */}
+        {/* Subtext - improved contrast */}
         <p className="fade-up" style={{
           animationDelay: "0.5s",
           fontFamily: "'Inter',sans-serif", fontWeight: 300,
           fontSize: "clamp(0.9rem,1.3vw,1.05rem)",
-          lineHeight: 1.9, color: "rgba(255,255,255,0.55)",
+          lineHeight: 1.9, color: "rgba(255,255,255,0.85)",
           maxWidth: "420px", marginBottom: "2.5rem",
+          background: "rgba(0,0,0,0.25)",
+          padding: "1rem 1.2rem",
+          backdropFilter: "blur(4px)",
         }}>
           25 years of premium printing from the heart of Ogba, Ikeja. Serving governments, corporations, churches and organizations across Nigeria and beyond.
         </p>
