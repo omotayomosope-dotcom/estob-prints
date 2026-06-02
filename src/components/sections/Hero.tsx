@@ -112,7 +112,7 @@ export default function Hero() {
           <span style={{ display: "block", width: "6px", height: "6px", borderRadius: "50%", background: "#C41A1A", opacity: 0.5 }} />
         </div>
 
-        {/* Subtext - improved contrast */}
+        {/* Subtext */}
         <p className="fade-up" style={{
           animationDelay: "0.5s",
           fontFamily: "'Inter',sans-serif", fontWeight: 300,
@@ -127,24 +127,36 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="fade-up" style={{ animationDelay: "0.55s", display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "5rem" }}>
+        <div className="fade-up" style={{ animationDelay: "0.55s", display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "5rem", alignItems: "center" }}>
+          
+          {/* Primary CTA - bigger and more prominent */}
           <Link href="/contact" style={{
-            fontFamily: "'Poppins',sans-serif", fontWeight: 700, fontSize: "10px",
-            letterSpacing: "0.2em", textTransform: "uppercase",
+            fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "12px",
+            letterSpacing: "0.25em", textTransform: "uppercase",
             color: "white", textDecoration: "none",
-            background: "#C41A1A", padding: "16px 40px",
-            transition: "background 0.2s ease", display: "inline-block",
+            background: "#C41A1A", padding: "20px 52px",
+            transition: "all 0.2s ease", display: "inline-flex",
+            alignItems: "center", gap: "10px",
+            boxShadow: "0 4px 24px rgba(196,26,26,0.4)",
           }}
-          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#991414"; }}
-          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#C41A1A"; }}>
-            Get a Quote
+          onMouseEnter={e => {
+            (e.currentTarget as HTMLElement).style.background = "#991414";
+            (e.currentTarget as HTMLElement).style.boxShadow = "0 6px 32px rgba(196,26,26,0.6)";
+            (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
+          }}
+          onMouseLeave={e => {
+            (e.currentTarget as HTMLElement).style.background = "#C41A1A";
+            (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 24px rgba(196,26,26,0.4)";
+            (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+          }}>
+            Get a Quote →
           </Link>
 
           <Link href="/portfolio" style={{
             fontFamily: "'Poppins',sans-serif", fontWeight: 500, fontSize: "10px",
             letterSpacing: "0.2em", textTransform: "uppercase",
             color: "rgba(255,255,255,0.7)", textDecoration: "none",
-            border: "1px solid rgba(255,255,255,0.3)", padding: "16px 40px",
+            border: "1px solid rgba(255,255,255,0.3)", padding: "20px 40px",
             transition: "all 0.2s ease", display: "inline-block",
           }}
           onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = "white"; (e.currentTarget as HTMLElement).style.color = "white"; }}
