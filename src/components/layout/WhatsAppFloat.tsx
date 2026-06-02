@@ -21,7 +21,7 @@ export default function WhatsAppFloat() {
         fontSize: "24px",
       }}
     >
-      💬
+      ??
     </a>
   );
 }
