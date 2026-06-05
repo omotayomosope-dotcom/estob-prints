@@ -15,8 +15,6 @@ const NAV = [
 const SOCIAL = [
   { l: "IG", h: CONTACT_INFO.social.instagram },
   { l: "FB", h: CONTACT_INFO.social.facebook },
-  { l: "X",  h: CONTACT_INFO.social.twitter },
-  { l: "LI", h: CONTACT_INFO.social.linkedin },
 ];
 
 const CONTACTS = [
@@ -133,7 +131,7 @@ export default function Footer() {
                 </a>
               ))}
 
-              {/* WhatsApp button — compact */}
+              {/* WhatsApp button */}
               <a href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\D/g,"")}`}
                 target="_blank" rel="noopener noreferrer"
                 style={{

@@ -125,10 +125,10 @@ export const CONTACT_INFO = {
   address: "1 Akinwale Street, Off Yaya Abatan, Ogba – Ikeja, Lagos",
   address2: "56 Ijaiye Road, Agege, Lagos, Nigeria",
   social: {
-    instagram: "https://instagram.com/estobprints",
-    facebook: "https://facebook.com/estobprints",
-    twitter: "https://twitter.com/estobprints",
-    linkedin: "https://linkedin.com/company/estobprints",
+    instagram: "https://instagram.com/estob_prints",
+    facebook: "https://web.facebook.com/profile.php?id=61590828382393",
+    twitter: "",
+    linkedin: "",
   },
 };
 
