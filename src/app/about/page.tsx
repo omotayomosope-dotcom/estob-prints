@@ -188,7 +188,7 @@ export default function About() {
 
         <div className="reveal" style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
+          gridTemplateColumns: "repeat(2, 1fr)",
           gap: "1px",
           background: "#eeeeee",
         }}>
