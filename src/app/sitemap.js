@@ -1,5 +1,7 @@
+import { POSTS } from "@/lib/posts";
+
 export default function sitemap() {
-  return [
+  const staticPages = [
     {
       url: 'https://www.estobprints.com',
       lastModified: new Date(),
@@ -30,6 +32,20 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-  ]
-}
+    {
+      url: 'https://www.estobprints.com/Insights',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+  ];
 
+  const blogPosts = POSTS.map((post) => ({
+    url: `https://www.estobprints.com/Insights/${post.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...blogPosts];
+}
