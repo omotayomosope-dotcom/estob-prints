@@ -29,14 +29,20 @@ const jsonLd = {
     addressCountry: "NG",
   },
   areaServed: "Lagos, Nigeria",
-  serviceType: [
+  makesOffer: [
     "Premium Printing",
     "Branding & Corporate Identity",
     "Corporate Merchandise",
     "Large Format Printing",
     "Promotional Materials",
     "Custom Print Solutions",
-  ],
+  ].map((service) => ({
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name: service,
+    },
+  })),
 };
 
 export default function HomePage() {
