@@ -33,6 +33,12 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
+      url: 'https://www.estobprints.com/printing-press-ogba',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://www.estobprints.com/Insights',
       lastModified: new Date(),
       changeFrequency: 'weekly',
