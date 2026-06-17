@@ -65,6 +65,20 @@ export default function About() {
     <section ref={ref} id="about" style={{ background: "#ffffff", padding: "7rem 0", borderBottom: "1px solid #eeeeee" }}>
       <div className="container-estob">
 
+        <h1 style={{
+          position: "absolute",
+          width: "1px",
+          height: "1px",
+          padding: 0,
+          margin: "-1px",
+          overflow: "hidden",
+          clip: "rect(0,0,0,0)",
+          whiteSpace: "nowrap",
+          border: 0,
+        }}>
+          About ESTOB Prints | Premium Printing & Branding in Ogba, Ikeja, Lagos
+        </h1>
+
         <div style={{
           display: "grid",
           gridTemplateColumns: "1.1fr 0.9fr",
