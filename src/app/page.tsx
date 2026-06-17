@@ -9,7 +9,7 @@ import Portfolio from "@/components/sections/Portfolio";
 import Clients from "@/components/sections/Clients";
 import Testimonials from "@/components/sections/Testimonials";
 import ContactCTA from "@/components/sections/ContactCTA";
-import { SITE_META } from "@/lib/constants";
+import { SITE_META, CONTACT_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `${SITE_META.name} | Printing Excellence. Branding That Gets You Seen.`,
@@ -23,6 +23,9 @@ const jsonLd = {
   name: "ESTOB Prints",
   description: SITE_META.description,
   url: SITE_META.url,
+  telephone: CONTACT_INFO.phone,
+  priceRange: "$$",
+  image: `${SITE_META.url}/og-image.jpg`,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lagos",
