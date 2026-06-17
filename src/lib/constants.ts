@@ -137,7 +137,7 @@ export const SITE_META = {
   tagline: "Printing Excellence. Branding That Gets You Seen.",
   description:
     "ESTOB Prints delivers premium printing, branding, promotional materials, and customized production solutions designed to help businesses, organizations, and brands stand out in Lagos, Nigeria.",
-  url: "https://estobprints.com",
+  url: "https://www.estobprints.com",
   keywords:
     "printing Lagos Nigeria, branding company Lagos, corporate merchandise, large format printing, promotional materials, ESTOB Prints",
 };
