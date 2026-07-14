@@ -1,4 +1,5 @@
 // FILE: src/app/page.tsx
+
 import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import TickerTape from "@/components/sections/TickerTape";
@@ -12,40 +13,111 @@ import ContactCTA from "@/components/sections/ContactCTA";
 import { SITE_META, CONTACT_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `${SITE_META.name} | Printing Excellence. Branding That Gets You Seen.`,
+  title: "Printing Press in Ogba, Ikeja, Lagos | ESTOB Prints",
   description: SITE_META.description,
-  alternates: { canonical: SITE_META.url },
+  alternates: {
+    canonical: SITE_META.url,
+  },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "PrintingService",
   name: "ESTOB Prints",
-  description: SITE_META.description,
+  image: `${SITE_META.url}/og-image.jpg`,
   url: SITE_META.url,
   telephone: CONTACT_INFO.phone,
+  email: CONTACT_INFO.email,
   priceRange: "$$",
-  image: `${SITE_META.url}/og-image.jpg`,
+  description: SITE_META.description,
+
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Lagos",
+    streetAddress: "1 Akinwale Street, Off Yaya Abatan",
+    addressLocality: "Ogba",
+    addressRegion: "Lagos",
+    postalCode: "",
     addressCountry: "NG",
   },
-  areaServed: "Lagos, Nigeria",
-  makesOffer: [
-    "Premium Printing",
-    "Branding & Corporate Identity",
-    "Corporate Merchandise",
-    "Large Format Printing",
-    "Promotional Materials",
-    "Custom Print Solutions",
-  ].map((service) => ({
-    "@type": "Offer",
-    itemOffered: {
-      "@type": "Service",
-      name: service,
-    },
-  })),
+
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "",
+    longitude: "",
+  },
+
+  areaServed: [
+    "Ogba",
+    "Ikeja",
+    "Agege",
+    "Ojodu",
+    "Berger",
+    "Maryland",
+    "Magodo",
+    "Lagos",
+    "Nigeria",
+  ],
+
+  sameAs: [
+    CONTACT_INFO.social.instagram,
+    CONTACT_INFO.social.facebook,
+  ],
+
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Printing & Branding Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Premium Printing",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Business Card Printing",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Banner Printing",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Large Format Printing",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Corporate Branding",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Packaging Printing",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Promotional Materials",
+        },
+      },
+    ],
+  },
 };
 
 export default function HomePage() {
@@ -53,8 +125,11 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
       />
+
       <Hero />
       <TickerTape />
       <About />

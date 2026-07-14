@@ -13,7 +13,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section style={{
+    <section aria-label="ESTOB Prints — Printing Press in Ogba, Ikeja, Lagos" style={{
       minHeight: "100vh",
       position: "relative",
       overflow: "hidden",
@@ -35,7 +35,7 @@ export default function Hero() {
         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "1.5rem" }}>
           <span style={{ display: "block", width: "20px", height: "1px", background: "#C41A1A", flexShrink: 0 }} />
           <span style={{ fontFamily: "'Poppins',sans-serif", fontWeight: 500, fontSize: "9px", letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(255,255,255,0.9)" }}>
-            Ogba, Ikeja Lagos — Premium Prints
+            Professional Printing Press in Ogba, Ikeja, Lagos
           </span>
         </div>
 
@@ -67,12 +67,10 @@ export default function Hero() {
           <span style={{ display: "block", width: "6px", height: "6px", borderRadius: "50%", background: "#C41A1A", opacity: 0.5 }} />
         </div>
 
-        {/* Stronger description */}
         <p style={{ fontFamily: "'Inter',sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem,1.3vw,1.05rem)", lineHeight: 1.9, color: "rgba(255,255,255,0.85)", maxWidth: "420px", marginBottom: "2rem", background: "rgba(0,0,0,0.25)", padding: "1rem 1.2rem", backdropFilter: "blur(4px)" }}>
-          For over 25 years, businesses across Lagos and Nigeria have trusted ESTOB Prints for premium printing, branding, and nationwide delivery.
+          ESTOB Prints is a trusted printing press in Ogba, Ikeja, Lagos, with over 25 years delivering corporate branding, business cards, flyers, banners, packaging, and large format printing. From promotional materials to nationwide delivery, we help brands across Lagos look and feel premium.
         </p>
 
-        {/* Cleaner trust indicators */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: "1.5rem", marginBottom: "1.2rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
             <span style={{ fontSize: "11px", color: "#C41A1A" }}>⭐</span>
@@ -92,13 +90,13 @@ export default function Hero() {
         </div>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2rem", alignItems: "center" }}>
-          <Link href="/contact" style={{ fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "13px", letterSpacing: "0.25em", textTransform: "uppercase", color: "white", textDecoration: "none", background: "#C41A1A", padding: "22px 56px", transition: "all 0.2s ease", display: "inline-flex", alignItems: "center", gap: "10px", boxShadow: "0 4px 24px rgba(196,26,26,0.5)" }}
+          <Link href="/contact" aria-label="Request a free printing quote from ESTOB Prints" style={{ fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "13px", letterSpacing: "0.25em", textTransform: "uppercase", color: "white", textDecoration: "none", background: "#C41A1A", padding: "22px 56px", transition: "all 0.2s ease", display: "inline-flex", alignItems: "center", gap: "10px", boxShadow: "0 4px 24px rgba(196,26,26,0.5)" }}
           onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#991414"; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
           onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#C41A1A"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}>
-            Get a Quote →
+            Request a Free Quote →
           </Link>
 
-          <Link href="/portfolio" style={{ fontFamily: "'Poppins',sans-serif", fontWeight: 600, fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(255,255,255,0.9)", textDecoration: "none", border: "1.5px solid rgba(255,255,255,0.6)", padding: "22px 40px", transition: "all 0.2s ease", display: "inline-flex", alignItems: "center", gap: "8px" }}
+          <Link href="/portfolio" aria-label="View ESTOB Prints portfolio of completed work" style={{ fontFamily: "'Poppins',sans-serif", fontWeight: 600, fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(255,255,255,0.9)", textDecoration: "none", border: "1.5px solid rgba(255,255,255,0.6)", padding: "22px 40px", transition: "all 0.2s ease", display: "inline-flex", alignItems: "center", gap: "8px" }}
           onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = "white"; (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.1)"; }}
           onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.6)"; (e.currentTarget as HTMLElement).style.background = "transparent"; }}>
             View Our Work →
@@ -106,7 +104,7 @@ export default function Hero() {
         </div>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "2rem" }}>
-          {["Business Cards", "Flyers", "Banners", "Packaging", "Branding", "Large Format"].map((service, i) => (
+          {["Business Cards", "Flyer Printing", "Brochure Printing", "Roll-Up Banners", "Large Format Printing", "Corporate Branding", "Packaging", "Signage", "Stickers", "Promotional Materials"].map((service, i) => (
             <span key={i} style={{ fontFamily: "'Poppins',sans-serif", fontWeight: 500, fontSize: "10px", letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", border: "1px solid rgba(255,255,255,0.12)", padding: "6px 14px", background: "rgba(255,255,255,0.04)" }}>
               {service}
             </span>
@@ -126,6 +124,10 @@ export default function Hero() {
             </div>
           ))}
         </div>
+
+        <p style={{ fontFamily: "'Inter',sans-serif", fontWeight: 300, fontSize: "11px", lineHeight: 1.8, color: "rgba(255,255,255,0.25)", maxWidth: "640px", marginTop: "2rem" }}>
+          As a leading printing press in Ogba and printing company in Ikeja, ESTOB Prints provides printing services across Lagos for businesses, churches, schools, and organizations. Our work spans corporate branding, business cards, large format printing, packaging, and promotional materials, produced with consistent quality and delivered reliably across Lagos and Nigeria.
+        </p>
 
       </div>
 

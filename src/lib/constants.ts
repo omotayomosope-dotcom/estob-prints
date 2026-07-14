@@ -1,4 +1,5 @@
 // FILE: src/lib/constants.ts
+
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -12,16 +13,18 @@ export const SERVICES = [
   {
     id: "premium-printing",
     icon: "🖨️",
-    title: "Premium Printing",
-    short: "High-quality print solutions designed for businesses, brands, events, and organizations.",
+    title: "Premium Printing Services",
+    short:
+      "High-quality printing services for businesses, churches, organizations, events, and brands across Lagos and Nigeria.",
     color: "#EF2020",
     accent: "red",
   },
   {
     id: "branding-identity",
     icon: "🎨",
-    title: "Branding & Corporate Identity",
-    short: "Helping brands create professional and memorable visual experiences.",
+    title: "Corporate Branding & Brand Identity",
+    short:
+      "Professional branding solutions that help businesses build memorable and trusted identities.",
     color: "#30C5F4",
     accent: "cyan",
   },
@@ -29,15 +32,17 @@ export const SERVICES = [
     id: "corporate-merchandise",
     icon: "🎁",
     title: "Corporate Merchandise",
-    short: "Customized branded products that strengthen visibility and customer connection.",
+    short:
+      "Customized branded merchandise designed to strengthen visibility and customer engagement.",
     color: "#EC008C",
     accent: "magenta",
   },
   {
     id: "large-format",
     icon: "📐",
-    title: "Large Format Printing",
-    short: "Bold visual solutions built for attention and impact.",
+    title: "Large Format Printing & Signage",
+    short:
+      "Large format printing, banners, signage, exhibition displays, and outdoor branding solutions.",
     color: "#FFE600",
     accent: "yellow",
   },
@@ -45,7 +50,8 @@ export const SERVICES = [
     id: "promotional-materials",
     icon: "📢",
     title: "Promotional Materials",
-    short: "Creative print products designed to support campaigns, marketing, and events.",
+    short:
+      "Flyers, brochures, posters, marketing materials, and promotional print solutions for businesses and events.",
     color: "#EF2020",
     accent: "red",
   },
@@ -53,7 +59,8 @@ export const SERVICES = [
     id: "custom-solutions",
     icon: "⚙️",
     title: "Custom Print Solutions",
-    short: "Tailored production solutions based on your unique business needs.",
+    short:
+      "Tailored printing and production solutions designed around your business needs.",
     color: "#30C5F4",
     accent: "cyan",
   },
@@ -62,37 +69,43 @@ export const SERVICES = [
 export const WHY_CHOOSE_US = [
   {
     title: "Premium Quality",
-    description: "Every print job is executed to the highest standard — no compromises.",
+    description:
+      "Every print job is executed to the highest professional standard with uncompromising quality.",
     icon: "⭐",
     color: "#FFE600",
   },
   {
     title: "Timely Delivery",
-    description: "We respect your deadlines. Your project ships when promised, every time.",
+    description:
+      "We deliver projects on schedule without compromising quality or attention to detail.",
     icon: "⚡",
     color: "#30C5F4",
   },
   {
     title: "Creative Solutions",
-    description: "We bring fresh thinking to every brief, from concept to final delivery.",
+    description:
+      "Innovative printing and branding ideas that help businesses stand out.",
     icon: "💡",
     color: "#EC008C",
   },
   {
     title: "Professional Execution",
-    description: "Expert handling at every stage — pre-press, production, and finishing.",
+    description:
+      "Expert handling from concept and pre-press through production and finishing.",
     icon: "🏆",
     color: "#EF2020",
   },
   {
     title: "Trusted Service",
-    description: "Businesses, churches, and organizations trust us because we consistently deliver.",
+    description:
+      "Trusted by businesses, churches, schools, and organizations across Lagos and Nigeria.",
     icon: "🤝",
     color: "#FFE600",
   },
   {
     title: "Attention to Detail",
-    description: "We obsess over the details so your brand always looks its best.",
+    description:
+      "Every design, print, and finishing detail is carefully executed for exceptional results.",
     icon: "🔍",
     color: "#30C5F4",
   },
@@ -100,22 +113,22 @@ export const WHY_CHOOSE_US = [
 
 export const STATS = [
   { value: "5,000+", label: "Projects Completed" },
-  { value: "500+",   label: "Clients Served" },
-  { value: "25+",    label: "Years Experience" },
-  { value: "100%",   label: "Quality Guaranteed" },
+  { value: "500+", label: "Clients Served" },
+  { value: "25+", label: "Years Experience" },
+  { value: "100%", label: "Quality Guaranteed" },
 ];
 
 export const TICKER_ITEMS = [
   "Premium Printing",
   "Corporate Branding",
-  "Large Format",
-  "Promotional Materials",
+  "Large Format Printing",
+  "Business Card Printing",
+  "Banner Printing",
+  "Flyer Printing",
+  "Packaging",
   "Corporate Merchandise",
-  "Custom Solutions",
   "Event Branding",
-  "Business Cards",
-  "Banners & Signage",
-  "Branded Apparel",
+  "Signage",
 ];
 
 export const CONTACT_INFO = {
@@ -134,10 +147,14 @@ export const CONTACT_INFO = {
 
 export const SITE_META = {
   name: "ESTOB Prints",
-  tagline: "Printing Excellence. Branding That Gets You Seen.",
+
+  tagline: "Professional Printing Press in Ogba, Ikeja, Lagos",
+
   description:
-    "ESTOB Prints delivers premium printing, branding, promotional materials, and customized production solutions designed to help businesses, organizations, and brands stand out in Lagos, Nigeria.",
+    "ESTOB Prints is a trusted printing press in Ogba, Ikeja, Lagos, delivering premium printing, corporate branding, business cards, flyers, banners, large format printing, packaging, promotional materials, and nationwide delivery for businesses, churches, organizations, and brands across Nigeria.",
+
   url: "https://www.estobprints.com",
+
   keywords:
-    "printing Lagos Nigeria, branding company Lagos, corporate merchandise, large format printing, promotional materials, ESTOB Prints",
+    "printing press Lagos, printing press Ogba, printing press Ikeja, printing company Lagos, digital printing Lagos, offset printing Lagos, business card printing Lagos, banner printing Lagos, flyer printing Lagos, brochure printing Lagos, roll up banner printing Lagos, large format printing Lagos, corporate branding Lagos, promotional materials Lagos, packaging printing Nigeria, signage printing Lagos, branded merchandise Lagos, ESTOB Prints",
 };
